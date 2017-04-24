@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body onload="init()">
+		
+		<!-- My app main page -->
+		<div data-role="page" id="pageone">
+		  <div data-role="header">
+			<h1>Aplikacja</h1>
+		  </div>
+		  <div data-role="main" class="ui-content">
+			<p>Lista atrakcji</p>
+              
+                        <div data-role="main" class="ui-content">
+            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Masuria</a>
+
+            <div data-role="popup" id="myPopup">
+                 <img src=img/mazury.jpg alt="Masuria" style="width:128px;height:128px;"> 
+            </div>
+          </div>
+              
+                                      <div data-role="main" class="ui-content">
+            <a href="#myPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Pomerania</a>
+
+            <div data-role="popup" id="myPopup2">
+                 <img src=img/pomorze.jpg alt="Pomerania" style="width:128px;height:128px;">                 
+            </div>
+          </div>
+              
+              
+                                      <div data-role="main" class="ui-content">
+            <a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">The Tatra Mountains</a>
+            <div data-role="popup" id="myPopup3">
+                 <img src=img/tatry.jpg alt="The Tatra Mountains" style="width:128px;height:128px;">
+
+		  </div>
+		  <div data-role="footer" data-position="fixed">
+			<h1>WSEI10141</h1>
+		  </div> 
+		</div> 
+		
+		<!-- Mobile device details page -->
+		<div data-role="page" id="details" data-dialog="true">
+			<div data-role="header" data-theme="a">
+				<h1>It's me</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<p id="deviceDetails">Place for device details ...</p>
+			</div>
+		</div>		
+		
+	</body>
+</html>
